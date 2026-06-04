@@ -17,6 +17,7 @@ const CATEGORY_ICONS = {
   Biography: '👤',
 }
 
+
 function Home() {
   // Get books from Redux store
   const books = useSelector((state) => state.books.list)
