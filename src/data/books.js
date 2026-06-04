@@ -3,6 +3,7 @@
 
 export const CATEGORIES = ['Fiction', 'Non-Fiction', 'Sci-Fi', 'Mystery', 'Romance', 'Biography'];
 
+
 export const INITIAL_BOOKS = [
   {
     id: 1,
