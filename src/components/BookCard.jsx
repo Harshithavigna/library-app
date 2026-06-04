@@ -11,6 +11,7 @@ function StarRating({ rating }) {
   const half = rating % 1 >= 0.5
   const empty = 5 - full - (half ? 1 : 0)
 
+  
   return (
     <span className={styles.stars} aria-label={`Rating: ${rating} out of 5`}>
       {'★'.repeat(full)}
