@@ -11,6 +11,7 @@ import { addBook } from '../store/booksSlice'
 import { CATEGORIES } from '../data/books'
 import styles from './AddBook.module.css'
 
+
 // Initial empty form state
 const INITIAL_FORM = {
   title: '',
