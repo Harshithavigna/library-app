@@ -11,6 +11,7 @@ function BookDetails() {
   const { id } = useParams() // Get book ID from the URL
   const navigate = useNavigate()
 
+  
   // Find the book from Redux store by matching the ID
   const book = useSelector((state) =>
     state.books.list.find((b) => b.id === parseInt(id) || b.id === Number(id) || String(b.id) === id)
