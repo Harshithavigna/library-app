@@ -11,6 +11,7 @@ import BookCard from '../components/BookCard'
 import { CATEGORIES } from '../data/books'
 import styles from './BrowseBooks.module.css'
 
+
 function BrowseBooks() {
   const { category } = useParams() // dynamic route param: /books/:category
   const navigate = useNavigate()
