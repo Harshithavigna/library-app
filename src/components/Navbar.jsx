@@ -14,6 +14,7 @@ function Navbar() {
           <span className={styles.logoText}>Librarium</span>
         </Link>
 
+
         {/* Navigation Links */}
         <ul className={styles.links}>
           <li>
