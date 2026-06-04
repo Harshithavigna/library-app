@@ -1,0 +1,215 @@
+.page {
+  padding: 40px 0 80px;
+  min-height: calc(100vh - 64px);
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 28px;
+  padding: 6px 0;
+  transition: color 0.15s;
+  text-transform: uppercase;
+}
+
+.backBtn:hover { color: var(--ink); }
+
+/* Detail Card Layout */
+.detailCard {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+@media (max-width: 680px) {
+  .detailCard {
+    grid-template-columns: 1fr;
+  }
+  .cover {
+    height: 200px !important;
+  }
+}
+
+/* Book Cover */
+.cover {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+}
+
+.coverSpine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: rgba(0,0,0,0.25);
+}
+
+.coverContent {
+  position: relative;
+  z-index: 1;
+}
+
+.coverTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+  line-height: 1.3;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  margin-bottom: 6px;
+}
+
+.coverAuthor {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  font-style: italic;
+}
+
+/* Info Section */
+.info {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.category {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brown);
+  background: var(--cream-dark);
+  padding: 3px 10px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.author {
+  font-size: 15px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Rating */
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars {
+  font-size: 20px;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.ratingNum {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Meta */
+.meta {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metaLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+.metaValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Description */
+.descriptionBlock { flex: 1; }
+
+.descLabel {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* Not Found */
+.notFound {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.notFoundIcon { font-size: 48px; margin-bottom: 16px; }
+
+.notFoundTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.notFoundText {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}

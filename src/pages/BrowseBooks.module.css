@@ -1,0 +1,136 @@
+.page {
+  padding: 48px 0 80px;
+  min-height: calc(100vh - 64px);
+}
+
+.pageHeader {
+  margin-bottom: 28px;
+}
+
+.pageTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Search */
+.searchWrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 13px 44px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.searchInput::placeholder { color: var(--text-faint); }
+
+.searchInput:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200, 146, 42, 0.12);
+}
+
+.clearSearch {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: var(--text-faint);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.15s;
+}
+
+.clearSearch:hover { color: var(--text); }
+
+/* Category Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.tab {
+  padding: 7px 16px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tab:hover {
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.tab.tabActive {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--cream);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.emptyIcon { font-size: 48px; margin-bottom: 12px; }
+
+.emptyText {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.emptyHint {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.emptyLink {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: underline;
+}

@@ -1,0 +1,99 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 2px 20px var(--shadow-md);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.logoText {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+
+/* Nav links */
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  display: block;
+  padding: 8px 16px;
+  color: rgba(245, 240, 232, 0.7);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: color 0.15s, background 0.15s;
+}
+
+.link:hover {
+  color: var(--cream);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.link.active {
+  color: var(--gold-light);
+}
+
+/* Add Book button */
+.addLink {
+  display: block;
+  padding: 8px 18px;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background 0.15s, transform 0.1s;
+}
+
+.addLink:hover {
+  background: var(--gold-light);
+}
+
+.addLink:active {
+  transform: scale(0.97);
+}
+
+.addActive {
+  background: var(--gold-light);
+}
+
+@media (max-width: 600px) {
+  .logoText { font-size: 18px; }
+  .link { padding: 6px 10px; font-size: 11px; }
+  .addLink { padding: 6px 12px; font-size: 11px; }
+}
