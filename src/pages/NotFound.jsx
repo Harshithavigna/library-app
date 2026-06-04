@@ -11,6 +11,7 @@ function NotFound() {
   // Get the current URL path that caused the 404
   const location = useLocation()
 
+  
   return (
     // Note: No <Navbar /> here — intentionally excluded per requirements
     <div className={styles.page}>
